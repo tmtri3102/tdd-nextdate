@@ -56,7 +56,7 @@ class NextDayTest {
     @DisplayName("Test end of February in leap year")
     public void findEndOfFebruaryLeapYear() {
         NextDay nextDay = new NextDay();
-        int day = 2;
+        int day = 29;
         int month = 2;
         int year = 2018;
         String expected = "1/3/2018";
