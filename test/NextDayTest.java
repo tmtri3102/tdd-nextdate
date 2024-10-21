@@ -15,4 +15,17 @@ class NextDayTest {
         String result = nextDay.getNextDay(day,month, year);
         assertEquals(expected,result);
     }
+
+    @Test
+    @DisplayName("Test end of month")
+    public void findEndOfMonth() {
+        NextDay nextDay = new NextDay();
+        int day = 31;
+        int month = 1;
+        int year = 2018;
+        String expected = "1/2/2018";
+        String result = nextDay.getNextDay(day,month, year);
+        assertEquals(expected,result);
+
+    }
 }
