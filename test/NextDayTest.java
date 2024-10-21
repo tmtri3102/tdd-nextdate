@@ -26,6 +26,17 @@ class NextDayTest {
         String expected = "1/2/2018";
         String result = nextDay.getNextDay(day,month, year);
         assertEquals(expected,result);
+    }
 
+    @Test
+    @DisplayName("Test end of month 2")
+    public void findEndOfMonth2() {
+        NextDay nextDay = new NextDay();
+        int day = 30;
+        int month = 4;
+        int year = 2018;
+        String expected = "1/5/2018";
+        String result = nextDay.getNextDay(day,month, year);
+        assertEquals(expected,result);
     }
 }
