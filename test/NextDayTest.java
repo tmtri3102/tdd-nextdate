@@ -63,4 +63,16 @@ class NextDayTest {
         String result = nextDay.getNextDay(day,month, year);
         assertEquals(expected,result);
     }
+
+    @Test
+    @DisplayName("Test next year")
+    public void findNextYear() {
+        NextDay nextDay = new NextDay();
+        int day = 31;
+        int month = 12;
+        int year = 2018;
+        String expected = "1/1/2019";
+        String result = nextDay.getNextDay(day,month, year);
+        assertEquals(expected,result);
+    }
 }
