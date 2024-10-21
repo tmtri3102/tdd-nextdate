@@ -51,4 +51,16 @@ class NextDayTest {
         String result = nextDay.getNextDay(day,month, year);
         assertEquals(expected,result);
     }
+
+    @Test
+    @DisplayName("Test end of February in leap year")
+    public void findEndOfFebruaryLeapYear() {
+        NextDay nextDay = new NextDay();
+        int day = 2;
+        int month = 2;
+        int year = 2018;
+        String expected = "1/3/2018";
+        String result = nextDay.getNextDay(day,month, year);
+        assertEquals(expected,result);
+    }
 }
